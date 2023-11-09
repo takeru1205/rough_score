@@ -2,8 +2,6 @@ import pickle
 
 from openai import OpenAI
 
-from pydantic import BaseModel
-
 
 def gpt(utterance):
     base_prompt = """
