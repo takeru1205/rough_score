@@ -30,14 +30,15 @@ def gpt(utterance):
     return response.choices[0].message.content, response.usage
 
 
-res, usage = gpt("個の事件は解決をみたことでもう話題にはならないだろうが、大きな反響を読んだ事は間違いなしだ。")
+if __name__ == "__main__":
+    res, usage = gpt("個の事件は解決をみたことでもう話題にはならないだろうが、大きな反響を読んだ事は間違いなしだ。")
 
-print(res)
+    print(res)
 
-print(usage)
+    print(usage)
 
-with open("artifacts/message.pkl", "wb") as f:
-    pickle.dump(res, f)
+    with open("artifacts/message.pkl", "wb") as f:
+        pickle.dump(res, f)
 
-with open("artifacts/usage.pkl", "wb") as f:
-    pickle.dump(usage, f)
+    with open("artifacts/usage.pkl", "wb") as f:
+        pickle.dump(usage, f)
