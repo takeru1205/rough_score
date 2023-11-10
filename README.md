@@ -43,6 +43,7 @@ CompletionUsage(completion_tokens=83, prompt_tokens=150, total_tokens=233)
 
 ## 他の例
 
+[誤字脱字文章例](https://rakutesu.com/kouseitest2/)
 
 次の文章について、誤字脱字の数を数えて教えてください。
 
@@ -100,3 +101,4 @@ CompletionUsage(completion_tokens=7, prompt_tokens=258, total_tokens=265)
 ```
 
 CompletionUsage(completion_tokens=73, prompt_tokens=225, total_tokens=298)
+
